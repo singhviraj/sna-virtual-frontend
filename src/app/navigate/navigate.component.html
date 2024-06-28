@@ -1,0 +1,51 @@
+<!--
+    <div class="navbar" >
+    <div class="site-name">
+    <h2>
+     Healthtrack
+    </h2>
+</div>
+<div class="site-menu">
+   
+<h5 appMouseover>kindly click twice to see about section</h5>
+<button >Home</button>
+<button >Contacts</button>
+<button (click) ='navigatetoproducts()'>Products</button>
+<button (click) ='aboutus()'>About</button>
+</div>
+</div>
+-->
+
+
+
+
+
+
+<!--<app-about #about >
+
+</app-about>-->
+  
+
+
+
+<header class="header">
+    <div class="logo">
+        <a href="">
+          <!--<img src='assets/romasyslogo.jpg' height="100px" width="100px">-->
+          <img src='assets/romasyslogo.jpg' >  
+        </a>
+    </div>
+    
+    <div class="navigation">
+    
+        <input type="checkbox" class="toggle-menu">
+        <div class="hamburger"></div>
+        <ul class="menu">
+     <li [routerLinkActive] ="'active'" [routerLinkActiveOptions]="{exact:true}"><a routerLink="">My Account</a></li>
+     
+     <li [routerLinkActive] ="'active'"><a routerLink="/Support">Support</a></li>
+     <li [routerLinkActive] ="'active'"><a routerLink="/Checkout">Checkout</a></li>
+        </ul>
+    
+    </div>
+    </header>

@@ -1,0 +1,17 @@
+<div class="contain">
+
+<div  *ngFor="let p of products">
+    <div>
+    <div class="products-conatiner"> <img src="" alt="" style="max-height: 50px;max-width: 50px;"> </div>
+</div>
+<div class="name-conatiner"><h4>{{p.name}}</h4></div>
+<div class="detail-container">
+    <div class="details"> Price:$1200 </div>
+    <div class="details"> Color:Black </div>
+</div>
+<div class="options">
+<button class="btn" routerLink="/Details/{{p.id}}"> Show Details</button>
+<button class="btn" (click)='sendcheckout(p)'> Buy</button>
+</div>
+</div>
+</div>

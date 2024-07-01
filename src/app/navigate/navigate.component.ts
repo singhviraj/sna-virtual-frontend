@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Renderer2 } from '@angular/core';
 
 @Component({
   selector: 'app-navigate',
@@ -7,4 +8,11 @@ import { Component } from '@angular/core';
 })
 export class NavigateComponent {
 
+  constructor(private _renderer: Renderer2)
+  {}
+  
+  ngOnInit(){
+    
+    this._renderer.setStyle(document.body, 'margin', 0);
+  }
 }

@@ -1,0 +1,159 @@
+
+<div class="container">
+
+    <div class="wrapper">
+    
+    <div class="div1">
+    
+        <div class="wrapperone">
+            <h1>hey you </h1>
+             
+    </div>
+    <img src="\Alexa.jpg" alt="">
+</div>
+    
+    <div class="div2">
+    <div class="wrappertwo">
+        <h1>and  you</h1> 
+    </div>
+    <img src="\Alexa.jpg" alt="">
+    </div>
+    
+    <div class="div3">
+    <div class="wrapperthree">
+        <h1>and you too</h1> 
+    </div>
+    <img src="\Alexa.jpg" alt="">
+    </div>
+    
+    </div>
+    </div>
+    
+ 
+
+
+
+
+
+
+
+
+    <div class="content"  >
+        <div class="content-image" ><img src="\Alexa.jpg" style="max-height: 550px;max-width: 550px;"></div>
+        <div class="content-paragraph"><h3>Find rich, high-quality printable, projectable, and electronic books that help students improve their comprehension and fluency. Filter the resources to find engaging texts that students can access at any time to get the practice they need to become better, more confident readers.</h3>
+        </div>
+        </div>
+        
+        <div class="content" >
+        <div class="content-paragraph" ><h3>Find rich, high-quality printable, projectable, and electronic books that help students improve their comprehension and fluency. Filter the resources to find engaging texts that students can access at any time to get the practice they need to become better, more confident readers.</h3></div>
+        <div class="content-image"><img src="\Alexa.jpg" style="max-height: 550px;max-width: 550px;"> </div>
+        
+        </div>
+
+
+<!--why adnia solutions start-->
+<div class="contain-adnia">
+  <div style="padding-top:3%;padding-bottom:5%"> <div style="margin:auto;width:28%"><h1>Why Adnia Solution?</h1></div></div>
+<div class="position" >            
+       
+<div>
+<div><img src="\Alexa.jpg"  style="width :170px;height:170px;border-radius:50%;" alt=""></div>
+
+           <!--<h4>About</h4>-->
+           <h4>Aneesa S. Majid, MD, MBA, FSIR CPE is an experienced physician leader, executive coach, and entrepreneur, with over 20 years of clinical and business experience.
+             Dr. Majid is a board-certified interventional radiologist, and previously was a partner in one of the longstanding IR/DR   </h4>
+           
+ </div>          
+
+
+
+
+<div>
+  <div><img src="\Alexa.jpg"  style="width :170px;height:170px;border-radius:50%;" alt=""></div>
+
+<h4>Dr. Kavi Devulapalli is a Columbia, Missouri based independent interventional radiologist who contracts with multiple hospitals
+   and outpatient based practices. His clinical interests include benign prostatic hyperplasia, uterine fibroids,
+    venous disease and  critical limb ischemia. </h4>
+ </div>     
+
+
+<div>
+<div><img src="\Alexa.jpg"  style="width :170px;height:170px;border-radius:50%;" alt=""></div>
+
+<h4>Dr. Shamit Desai, MD is a practicing interventional radiologist and a founding member of Physician Staffing Solutions, LLC. 
+  He attended Rutgers Medical School and Northwestern University Feinberg School of Medicine for his residency and fellowship in Vascular & Interventional .  </h4>
+ </div>              
+</div>
+</div>
+
+
+<!--why adnia solutions end-->
+
+
+
+
+        <div class="contain">
+
+          <div  *ngFor="let p of products;let i = index">
+           
+              <div>
+              <div class="products-conatiner"> <img src="\Alexa.jpg" alt="" style="max-height: 350px;max-width: 350px;"> </div>
+          </div>
+          <div class="name-conatiner"><h4>{{p.name}}</h4></div>
+          <div class="detail-container">
+              <div class="details"> Price:$1200 </div>
+              <div class="details"> Color:Black </div>
+          </div>
+          <div class="options">
+          <button class="btn" routerLink="/Details/{{p.id}}"> Show Details</button>
+          <button class="btn" (click)='sendcheckout(p)'> Buy</button>
+          </div>
+          </div>
+          
+          </div>
+
+
+
+
+  
+
+
+
+<div class="footer-container"> 
+    <div class="footer">
+    <div class="flex-container">
+      <h6>Company</h6>
+      <p>About</p>
+      <p>Services</p>
+      <p>Design</p>
+      <p>Principles</p>
+    </div>
+    
+    <div class="flex-container">
+      <h6>Company</h6>
+      <p>About</p>
+      <p>Services</p>
+      <p>Design</p>
+      <p>Principles</p>
+    </div>
+    
+    <div class="flex-container">
+      <h6>Company</h6>
+      <p>About</p>
+      <p>Services</p>
+      <p>Design</p>
+      <p>Principles</p>
+    </div>
+    
+    <div class="flex-container">
+      <h6>Signup</h6>
+      <p>To get daily notification register your email here</p>
+      <form>
+      <input type="email" placeholder="enter your email here" size="40">
+      <input type="button" value="Signup" size="50">
+      </form>
+    </div>
+  </div>
+
+  </div>
+  

@@ -32,8 +32,9 @@
     <div class="logo">
         <a href="">
           <!--<img src='assets/romasyslogo.jpg' height="100px" width="100px">-->
-          <img src='assets/romasyslogo.jpg' >  
-        </a>
+          <img src="/Alexa.jpg" alt="">
+
+                </a>
     </div>
     
     <div class="navigation">
@@ -41,11 +42,23 @@
         <input type="checkbox" class="toggle-menu">
         <div class="hamburger"></div>
         <ul class="menu">
-     <li [routerLinkActive] ="'active'" [routerLinkActiveOptions]="{exact:true}"><a routerLink="">My Account</a></li>
+     <li [routerLinkActive] ="'active'" [routerLinkActiveOptions]="{exact:true}"><a routerLink="/Account">Account</a></li>
      
-     <li [routerLinkActive] ="'active'"><a routerLink="/Support">Support</a></li>
+     <li [routerLinkActive] ="'active'"><a routerLink="/Customerhelp">Customerhelp</a></li>
      <li [routerLinkActive] ="'active'"><a routerLink="/Checkout">Checkout</a></li>
         </ul>
     
     </div>
     </header>
+
+
+
+
+
+    <div class="navbar">
+        <a routerLink="/Home">Home</a>
+        <a routerLink="/Products">Products</a>
+        <a routerLink="/About">About</a>
+        <a routerLink="/Contact">Contact</a>
+          
+      </div>

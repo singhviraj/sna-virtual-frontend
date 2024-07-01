@@ -1,6 +1,7 @@
 .contain{
 display:grid;
 grid-template-columns: auto auto auto;
+
 }
 
 .product-container{
@@ -10,6 +11,7 @@ grid-template-columns: auto auto auto;
     border-radius:5px;
    margin-left: 40px;
 }
+
 
 ul.a {
     list-style-type: square;
@@ -33,11 +35,13 @@ ul.a {
 }
 
 .detail-container{
-    margin:0px 20px;
+    /*This was the previous margin*/
+   /* margin:0px 20px;*/
     
 }
 .name-container{
     margin:0px 20px;
+    
 }
 
 .details{
@@ -46,14 +50,16 @@ width:140px
 
 .option{
     width:220px;
-    margin-left:80px;
+    
     
 
 }
 
 .btn{
     font-size:10px;
-    margin:0px 5px;
+    /*This was the previous margin*/
+    /*margin:0px 5px;*/
+    margin-left:45px;
     padding:2px 10 px;
    
 }

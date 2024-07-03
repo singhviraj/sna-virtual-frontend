@@ -3,6 +3,7 @@ import { Renderer2 } from '@angular/core';
 import { ProductsService } from '../products.service';
 import { CheckoutService } from '../checkout.service';
 import { HomeproductsService } from '../homeproducts.service';
+import { AmountService } from '../amount.service';
 
 @Component({
   selector: 'app-home',
@@ -11,9 +12,10 @@ import { HomeproductsService } from '../homeproducts.service';
 })
 export class HomeComponent {
 
-  constructor(private _renderer: Renderer2,private productslist: HomeproductsService , private checkoutlist :CheckoutService)
+  constructor(private _renderer: Renderer2,private productslist: HomeproductsService ,
+     private checkoutlist :CheckoutService, private amountlist: AmountService)
   {}
-  products:{id: string,name:string,price:string,color:string,description:string}[]=[];
+  products:{id: string,name:string,price:string,color:string,description:string,amount:number}[]=[];
 
   ngOnInit(){
     this.products=this.productslist.products;
@@ -22,7 +24,8 @@ export class HomeComponent {
     
   }
 
-  sendcheckout(p1 : {id: string,name:string,price:string,color:string,description:string}){
+  sendcheckout(p1 : {id: string,name:string,price:string,color:string,description:string,amount:number}){
     this.checkoutlist.addnewproduct(p1);
+    this.amountlist.addamount(p1.amount);
   }
 }

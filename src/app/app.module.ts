@@ -11,6 +11,9 @@ import { HomeComponent } from './home/home.component';
 import { AboutComponent } from './about/about.component';
 import { ContactComponent } from './contact/contact.component';
 import { AccountComponent } from './account/account.component';
+import { SearchComponent } from './search/search.component';
+import { FormsModule } from '@angular/forms';
+import { CustomerhelpComponent } from './customerhelp/customerhelp.component';
 
 
 
@@ -25,6 +28,7 @@ const approute: Routes=[
   {path:'Contact',component:ContactComponent},
   {path:'About',component:AboutComponent},
   {path:'Account',component:AccountComponent},
+  {path:'Customerhelp',component:CustomerhelpComponent},
   
 
 ]
@@ -40,12 +44,12 @@ const approute: Routes=[
     AboutComponent,
     ContactComponent,
     AccountComponent,
-    
-   
+    SearchComponent,
+ 
     
   ],
   imports: [
-    BrowserModule,
+    BrowserModule,FormsModule,
     AppRoutingModule,RouterModule.forRoot(approute),
   ],
   providers: [],

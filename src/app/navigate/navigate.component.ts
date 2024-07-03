@@ -1,5 +1,6 @@
-import { Component } from '@angular/core';
+import { Component,OnInit,DoCheck } from '@angular/core';
 import { Renderer2 } from '@angular/core';
+import { AmountService } from '../amount.service';
 
 @Component({
   selector: 'app-navigate',
@@ -7,12 +8,18 @@ import { Renderer2 } from '@angular/core';
   styleUrl: './navigate.component.css'
 })
 export class NavigateComponent {
-
-  constructor(private _renderer: Renderer2)
+  displayamount:number=0;
+  size:number=0;
+  constructor(private _renderer: Renderer2, private amount:AmountService)
   {}
-  
-  ngOnInit(){
+    ngOnInit(){
     
     this._renderer.setStyle(document.body, 'margin', 0);
+    this.displayamount = this.amount.total;
+    
   }
+ ngDoCheck(){
+  this.displayamount = this.amount.total; 
+  this.size= this.amount.count;
+ }
 }

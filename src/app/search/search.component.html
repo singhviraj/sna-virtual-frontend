@@ -1,0 +1,9 @@
+<div style="width:100%">
+    <div class="search-div" [ngClass] ="{changebackground: searchvalue!= ''}">
+    Search:
+<!--<input type="text" (input) = "inputfunction($eventdata)"> -->    
+<input type="text" [(ngModel)]= "searchvalue" (input) ="onsearchtextchange()">
+
+<!--<ng-content></ng-content>-->
+</div>
+</div>

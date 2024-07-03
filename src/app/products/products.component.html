@@ -1,6 +1,16 @@
-<div class="contain">
+<app-search (searchtextvalue) = "aftersearchtext($event)">
+    <div *ngIf="searchtext != ''">
+        Just to confirm did you searched for {{searchtext}}
+    </div>
+</app-search>
 
+
+<!--<div  [ngClass] ="{products-conatiner:p.name.toLowerCase().includes(searchtext)}"></div>-->
+
+<!--
+<div class="contain">
 <div  *ngFor="let p of products">
+    <div *ngIf ="searchtext === ''  ||  p.name.toLowerCase().includes(searchtext)">
     <div>
     <div class="products-conatiner"> <img src="\Alexa.jpg" alt="" style="max-height: 350px;max-width: 350px;"> </div>
 </div>
@@ -12,6 +22,24 @@
 <div class="options">
 <button class="btn" routerLink="/Details/{{p.id}}"> Show Details</button>
 <button class="btn" (click)='sendcheckout(p)'> Buy</button>
+</div>
+</div>
+</div>
+</div>
+-->
+<!---->
+<h2 style="text-align:center">Product Card</h2>
+
+<div class="bang" >
+  <div *ngFor="let p of products;let i = index">
+    <div *ngIf ="searchtext === ''  ||  p.name.toLowerCase().includes(searchtext)">
+<div class="card">
+  <img src="\Alexa.jpg" alt="Denim Jeans" style="width:100%">
+  <h1>{{p.name}}</h1>
+  <p class="price">$19.99</p>
+  <div style="display:flex ;"><button routerLink="/Details/{{p.id}}" >Show Details</button>
+  <button (click)='sendcheckout(p)'>Checkout</button></div>
+</div>
 </div>
 </div>
 </div>

@@ -1,1 +1,41 @@
-<h1>Comming soon..</h1>>
+
+<div class="contain-page" >
+<h1 style="font-size: 40px;">FAQ – Frequently Asked Questions</h1>
+
+<div class="contain-parts">
+<h2 style="font-size: 35px;">Services, response time, opening hours</h2>
+<div (click)="showparagraph()" class="position-contain">
+<h3 class="position-heading" style="font-size: 30px;">
+    <span  [ngClass]="{'show-class': show === 1}" style="margin-right: 2%; color:#92a8d1">&minus;</span> 
+    <span  [ngClass]="{'show-class': show === 0}" style="margin-right: 2%; color:#92a8d1">&plus;</span> 
+    When can we contact you 
+</h3>
+<div [ngClass]="{'show-class': show === 0}" style="font-size: 25px;"><h4>Our office is open from 8:30 AM until 4:30 PM Monday riday (EST Time).
+    We pledge to respond to you in 24 hours.</h4></div>
+</div>
+</div>
+
+
+<div class="contain-parts">
+<h2 style="font-size: 35px;">Purchase, payments, discounts</h2>
+<div (click)="showparagraph1()" class="position-contain">
+    <h3 class="position-heading" style="font-size: 30px;">
+        <span  [ngClass]="{'show-class': show1 === 1}" style="margin-right: 2%;color:#92a8d1">&minus;</span> 
+        <span  [ngClass]="{'show-class': show1 === 0}" style="margin-right: 2%;color:#92a8d1">&plus;</span> 
+        Do I have to pay montly ?
+    </h3>
+    <div [ngClass]="{'show-class': show1 === 0}" style="font-size: 25px;"><h4>Its a one time fee.</h4></div>
+    </div>
+    <div (click)="showparagraph2()" class="position-contain">
+        <h3 class="position-heading" style="font-size: 30px;">
+            <span  [ngClass]="{'show-class': show2 === 1}" style="margin-right: 2%;color:#92a8d1">&minus;</span> 
+            <span  [ngClass]="{'show-class': show2 === 0}" style="margin-right: 2%;color:#92a8d1">&plus;</span> 
+            How can I pay?
+        </h3>
+        <div [ngClass]="{'show-class': show2 === 0}" style="font-size: 25px;"><h4>Using Paypal or Stripe </h4></div>
+        </div>
+</div>
+
+
+
+    </div>

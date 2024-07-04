@@ -14,6 +14,7 @@ import { AccountComponent } from './account/account.component';
 import { SearchComponent } from './search/search.component';
 import { FormsModule } from '@angular/forms';
 import { CustomerhelpComponent } from './customerhelp/customerhelp.component';
+import { CommonModule } from '@angular/common';
 
 
 
@@ -45,11 +46,11 @@ const approute: Routes=[
     ContactComponent,
     AccountComponent,
     SearchComponent,
- 
+    CustomerhelpComponent,
     
   ],
   imports: [
-    BrowserModule,FormsModule,
+    BrowserModule,FormsModule,CommonModule,      
     AppRoutingModule,RouterModule.forRoot(approute),
   ],
   providers: [],

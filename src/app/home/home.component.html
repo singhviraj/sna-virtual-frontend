@@ -1,43 +1,22 @@
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<app-header></app-header>
 
-<div class="container">
 
-    <div class="wrapper">
-    
-    <div class="div1">
-    
-        <div class="wrapperone">
-            <h1>Some text about <br>who we are and <br>what we do .1
 
-            </h1>
-             
+ <!--Parallel images start-->
+
+ <div>
+  <div class="adjacent-images">
+   <img src="\Alexa.jpg"   alt="">
+   <img src="\Alexa.jpg"   alt="">
+   <img src="\Alexa.jpg"   alt="">
   </div>
-<img src="\Alexa.jpg" alt="">
-</div>
-    
-    <div class="div2">
-    <div class="wrappertwo">
-        <h1>Some text about <br>who we are and <br>what we do.2</h1> 
-    </div>
-    <img src="\Imperial.jpg" alt="">
-    </div>
-    
-    <div class="div3">
-    <div class="wrapperthree">
-        <h1>Some text about <br>who we are and <br>what we do.2</h1> 
-    </div>
-    <img src="\Alexa.jpg" alt="">
-    </div>
-    
-    </div>
-    </div>
-    
- 
-
-
-
-
-
+  <div class="adjacent-images" >
+   <h4 style="margin-top:-135px">Some text or product which we can connect </h4>
+   <h4 style="margin-top:-135px">Some text or product which we can connect</h4>
+   <h4 style="margin-top:-135px">Some text or product which we can connect</h4>
+ </div>
+ </div>
+  <!--Parallel images end-->
 
 
 
@@ -52,6 +31,50 @@
         <div class="content-image"><img src="\Alexa.jpg" style="max-height: 550px;max-width: 550px;"> </div>
         
         </div>
+
+
+
+
+
+<!--this needs to be deleted , check before deleting-->
+    <!--    <div class="contain">
+
+          <div  *ngFor="let p of products;let i = index">
+           
+              <div>
+              <div class="products-conatiner"> <img src="\Alexa.jpg" alt="" style="max-height: 350px;max-width: 350px;"> </div>
+          </div>
+          <div class="name-conatiner"><h4>{{p.name}}</h4>
+          
+               Price:$1200 
+               Color:Black 
+          </div>
+          <div class="options">
+          <button class="btn" routerLink="/Details/{{p.id}}"> Show Details</button>
+          <button class="btn" (click)='sendcheckout(p)'> Buy</button>
+          </div>
+          </div>
+          
+          </div>
+        -->
+<!--till here-->
+<!--The below ones is good-->
+<div style="margin-top: 10%;">
+<h2 style="text-align:center">Product Card</h2>
+<div class="bang" >
+  <div *ngFor="let p of products;let i = index">
+<div class="card">
+  <img src="\Alexa.jpg" alt="Denim Jeans" style="width:100%">
+  <h1>{{p.name}}</h1>
+  <p class="price">${{p.amount}}</p>
+  <div style="display:flex ;"><button routerLink="/Details/{{p.id}}" >Show Details</button>
+  <button (click)='sendcheckout(p)'>Checkout</button></div>
+</div>
+</div>
+</div>
+</div>
+<!--till here-->
+
 
 
 <!--why adnia solutions start-->
@@ -91,97 +114,3 @@
 
 
 <!--why adnia solutions end-->
-
-
-
-<!--this needs to be deleted , check before deleting-->
-    <!--    <div class="contain">
-
-          <div  *ngFor="let p of products;let i = index">
-           
-              <div>
-              <div class="products-conatiner"> <img src="\Alexa.jpg" alt="" style="max-height: 350px;max-width: 350px;"> </div>
-          </div>
-          <div class="name-conatiner"><h4>{{p.name}}</h4>
-          
-               Price:$1200 
-               Color:Black 
-          </div>
-          <div class="options">
-          <button class="btn" routerLink="/Details/{{p.id}}"> Show Details</button>
-          <button class="btn" (click)='sendcheckout(p)'> Buy</button>
-          </div>
-          </div>
-          
-          </div>
-        -->
-<!--till here-->
-<!--The below ones is good-->
-<h2 style="text-align:center">Product Card</h2>
-
-<div class="bang" >
-  <div *ngFor="let p of products;let i = index">
-<div class="card">
-  <img src="\Alexa.jpg" alt="Denim Jeans" style="width:100%">
-  <h1>{{p.name}}</h1>
-  <p class="price">$19.99</p>
-  <div style="display:flex ;"><button routerLink="/Details/{{p.id}}" >Show Details</button>
-  <button (click)='sendcheckout(p)'>Checkout</button></div>
-</div>
-
-</div>
-</div>
-<!--till here-->
-
-
-  
-
-
-
-<div class="footer-container"> 
-    <div class="footer">
-    <div class="flex-container">
-      <h2>Company</h2>
-      <p>About</p>
-      <p>Services</p>
-      <p>Design</p>
-      <p>Principles</p>
-    </div>
-    
-    <div class="flex-container">
-      <h2>Company</h2>
-      <p>About</p>
-      <p>Services</p>
-      <p>Design</p>
-      <p>Principles</p>
-    </div>
-    
-    <div class="flex-container">
-      <h2>Company</h2>
-      <p>About</p>
-      <p>Services</p>
-      <p>Design</p>
-      <p>Principles</p>
-    </div>
-    
-    <div class="flex-container">
-      <h2>Signup</h2>
-      <p>To get daily notification register <br>your email here</p>
-      <form>
-      <input type="email" placeholder="enter your email here" size="20">
-      <input type="button" value="Signup" >
-      </form>
-
-      <div class="flex-container-icons">
-        <a href="#" class="fa fa-facebook"></a>
-        <a href="#" class="fa fa-twitter"></a>
-<a href="#" class="fa fa-google"></a>
-<a href="#" class="fa fa-linkedin"></a>
-      </div>
-    </div>
-
-    
-  </div>
-
-  </div>
-  

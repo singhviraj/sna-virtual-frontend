@@ -142,19 +142,26 @@ input[type=button]{
 
 
  /*new products css starts here*/
- .bang{ 
+ /*.bang{ 
     margin-bottom: 10%;
 display:grid;
 grid-template-columns: 33% 33% 33%;
 gap:10px;
+}*/
+.bang1{
+  display:flex;
+  flex-wrap: wrap;
+  margin-left: 5%;
 }
 .card {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-  max-width: 300px;
-  margin: auto;
+  width: 300px;
+  margin: 50px;
   text-align: center;
   font-family: arial;
 }
+
+
 .card:hover{
   transform: scale(1.1);
 }
@@ -179,4 +186,9 @@ gap:10px;
 
 .card button:hover {
   opacity: 0.7;
+}
+/*new products css end here*/
+
+.showcase{
+  display:none;
 }

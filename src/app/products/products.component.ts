@@ -27,6 +27,4 @@ this.searchtext =data;
 this.searchtext = this.searchtext.toLowerCase();
 }
 
-
-
 }

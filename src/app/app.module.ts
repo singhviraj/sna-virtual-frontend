@@ -15,6 +15,9 @@ import { SearchComponent } from './search/search.component';
 import { FormsModule } from '@angular/forms';
 import { CustomerhelpComponent } from './customerhelp/customerhelp.component';
 import { CommonModule } from '@angular/common';
+import { BackgroundimageDirective } from './backgroundimage.directive';
+import { HeaderComponent } from './header/header.component';
+import { FooterComponent } from './footer/footer.component';
 
 
 
@@ -47,6 +50,9 @@ const approute: Routes=[
     AccountComponent,
     SearchComponent,
     CustomerhelpComponent,
+    BackgroundimageDirective,
+    HeaderComponent,
+    FooterComponent,
     
   ],
   imports: [

@@ -15,6 +15,8 @@ export class HomeComponent {
   constructor(private _renderer: Renderer2,private productslist: HomeproductsService ,
      private checkoutlist :CheckoutService, private amountlist: AmountService)
   {}
+ 
+
   products:{id: string,name:string,price:string,color:string,description:string,amount:number}[]=[];
 
   ngOnInit(){

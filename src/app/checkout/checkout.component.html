@@ -1,10 +1,35 @@
+<div style="margin-bottom: 20%;">
+
 
 
 <div style="width:100%;margin-top: 15%;" *ngIf="checkoutlist.length === 0 ">
    <div style="margin:auto;width:50%;"><h1>No products added yet . Kindly add some </h1></div> 
 </div>
 
-<div *ngFor="let c of checkoutlist;let i = index">
+
+        
+        
+
+
+<div *ngIf="checkoutlist.length != 0 " >
+
+    <div class="contain-checkout">
+        <p>Terms and conditions</p>
+        <p>These are the Terms and Conditions governing the use of this Service and the agreement that operates
+        between You and the Company. These Terms and Conditions set out the rights and obligations of all users
+        regarding the use of the Service.
+        Your access to and use of the Service is conditioned on Your acceptance of and compliance with these
+        Terms and Conditions. These Terms and Conditions apply to all visitors, users and others who access or
+        use the Service.
+        By accessing or using the Service You agree to be bound by these Terms and Conditions. If You disagree
+        with any part of these Terms and Conditions then You may not access the Service.
+        </p>
+        <p>$ {{displayamount}}</p>
+        <button > Click</button>
+    </div>
+
+    <div class="contain-checkout1">
+<div *ngFor="let c of checkoutlist;let i = index" >
     <div class="course-container">
     <div>
         <img src="/Alexa.jpg" width="560" height="200">
@@ -18,7 +43,7 @@
 <div style="margin: 0px 10px;"> <b>Author:</b> John Doe</div>
 </div>
 <div style="margin: 0px 10px;">
-<h2>Price: $ 120.00</h2>
+<h2>Price: $ {{c.amount}}</h2>
 </div>
 <div style="margin: 0px 10px;">
     <p>Description</p>
@@ -27,4 +52,10 @@
 <button (click) ='remove(i)'>Cancel</button>
 
 </div>
+</div>
+</div>
+</div>
+
+
+
 </div>

@@ -30,13 +30,16 @@
 <!---->
 <h2 style="text-align:center">Product Card</h2>
 
-<div class="bang" >
-  <div *ngFor="let p of products;let i = index">
-    <div *ngIf ="searchtext === ''  ||  p.name.toLowerCase().includes(searchtext)">
-<div class="card">
+<div class="bang1">
+  <div *ngFor="let p of products;let i = index" >
+   
+    <div *ngIf ="searchtext === ''  ||  p.name.toLowerCase().includes(searchtext)" 
+    [ngClass]="{'showcase': !p.name.toLowerCase().includes(searchtext) }">
+<!--<div class="card" >-->
+  <div class="card" >
   <img src="\Alexa.jpg" alt="Denim Jeans" style="width:100%">
   <h1>{{p.name}}</h1>
-  <p class="price">$19.99</p>
+  <p class="price">${{p.amount}}</p>
   <div style="display:flex ;"><button routerLink="/Details/{{p.id}}" >Show Details</button>
   <button (click)='sendcheckout(p)'>Checkout</button></div>
 </div>

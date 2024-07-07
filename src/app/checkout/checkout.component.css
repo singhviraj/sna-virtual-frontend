@@ -7,6 +7,28 @@
   align-items: center;
 }
 */
+
 .course-details{
     display:flex;
+}
+.acknowledge{
+  top:20px;
+  left:20px;
+}
+.contain-checkout button{
+    color: white;
+    background-color: #000;
+    text-align: center;
+    width: 100%;
+  
+}
+.contain-checkout{
+  position:absolute;
+ top: 42%;
+ left: 62%;
+}
+.contain-checkout1{
+  width: 50%;
+  height: 400px; 
+  overflow-y:scroll ;
 }

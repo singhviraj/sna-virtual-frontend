@@ -1,0 +1,15 @@
+
+    <input type="search" [(ngModel)] ="searchvalue"  placeholder="Search for products..">
+
+    <div *ngIf="searchvalue != ''">
+        <div *ngFor="let p of products">
+            <div  *ngIf =" p.name.toLowerCase().includes(searchvalue)">
+                <ul id="">
+               <li routerLink="/Details/{{p.id}}" class="select">{{p.name}} </li>
+               </ul>
+            </div>
+        <div> 
+    </div>
+
+
+

@@ -29,18 +29,26 @@
 
 
 <header class="header">
+
+        
     <div class="logo">
         <a href="">
           <!--<img src='assets/romasyslogo.jpg' height="100px" width="100px">-->
           <img src="/Alexa.jpg" alt="">
-
-                </a>
+        </a>
     </div>
-    
+    <div class="search"><app-homesearch style="position:absolute;left:40%;z-index: 3;"></app-homesearch></div>
     <div class="navigation">
-    
-        <input type="checkbox" class="toggle-menu">
-        <div class="hamburger"></div>
+        <!--<input type="checkbox" > -->
+     <!--   <input type="checkbox" class="toggle-menu"> -->
+       <!-- <div class="hamburger"></div> -->
+        
+<!--search function start-->
+
+
+<!---->
+
+
         <ul class="menu">
      <li [routerLinkActive] ="'active'" [routerLinkActiveOptions]="{exact:true}"><a routerLink="/Account">Account</a></li>
      

@@ -1,0 +1,6 @@
+.select{
+    list-style-type: none;color:#fff
+}
+.select:hover{
+    color:black;
+}

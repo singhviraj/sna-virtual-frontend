@@ -18,6 +18,7 @@ import { CommonModule } from '@angular/common';
 import { BackgroundimageDirective } from './backgroundimage.directive';
 import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
+import { HomesearchComponent } from './homesearch/homesearch.component';
 
 
 
@@ -53,6 +54,7 @@ const approute: Routes=[
     BackgroundimageDirective,
     HeaderComponent,
     FooterComponent,
+    HomesearchComponent,
     
   ],
   imports: [

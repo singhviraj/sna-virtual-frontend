@@ -1,6 +1,7 @@
 import { Component,OnInit,DoCheck } from '@angular/core';
 import { Renderer2 } from '@angular/core';
 import { AmountService } from '../amount.service';
+import { ProductsService } from '../products.service';
 
 @Component({
   selector: 'app-navigate',
@@ -10,6 +11,7 @@ import { AmountService } from '../amount.service';
 export class NavigateComponent {
   displayamount:number=0;
   size:number=0;
+
   constructor(private _renderer: Renderer2, private amount:AmountService)
   {}
     ngOnInit(){

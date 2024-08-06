@@ -5,18 +5,19 @@
   <form action="/action_page.php">
     <div class="row">
       <div class="col-25">
-        <label for="fname">First Name</label>
+     <!--<label for="fname">First Name</label>-->   
+     <label for="fname"> Full name</label>
       </div>
       <div class="col-75">
-        <input type="text" id="fname" name="firstname" placeholder="Your name..">
+        <input type="text" [(ngModel)]= "use.fullname" name="fullname" placeholder="Your name..">
       </div>
     </div>
     <div class="row">
       <div class="col-25">
-        <label for="lname">Last Name</label>
+        <label for="cardn">Card Number</label>
       </div>
       <div class="col-75">
-        <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+        <input type="text" [(ngModel)]= "use.card" name="card" placeholder="Your last name..">
       </div>
     </div>
     <div class="row">
@@ -33,14 +34,22 @@
     </div>
     <div class="row">
       <div class="col-25">
-        <label for="subject">Subject</label>
+        <label for="emailid">Email</label>
       </div>
       <div class="col-75">
-        <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+        <input type="text" [(ngModel)]= "use.email" name="email" placeholder="Your password">
       </div>
     </div>
     <div class="row">
-      <input type="submit" value="Submit">
+      <div class="col-25">
+        <label for="pass">Password</label>
+      </div>
+      <div class="col-75">
+        <input type="password" [(ngModel)]= "use.password" name="pass" placeholder="Your last name..">
+      </div>
+    </div>
+    <div class="row">
+      <input (click)='connectdatabase()' type="submit" value="Submit">
     </div>
   </form>
 </div>

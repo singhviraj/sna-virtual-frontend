@@ -12,13 +12,15 @@ import { AboutComponent } from './about/about.component';
 import { ContactComponent } from './contact/contact.component';
 import { AccountComponent } from './account/account.component';
 import { SearchComponent } from './search/search.component';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { CustomerhelpComponent } from './customerhelp/customerhelp.component';
 import { CommonModule } from '@angular/common';
 import { BackgroundimageDirective } from './backgroundimage.directive';
 import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
 import { HomesearchComponent } from './homesearch/homesearch.component';
+import { HttpClientModule } from '@angular/common/http';
+import { SignupComponent } from './signup/signup.component';
 
 
 
@@ -34,8 +36,7 @@ const approute: Routes=[
   {path:'About',component:AboutComponent},
   {path:'Account',component:AccountComponent},
   {path:'Customerhelp',component:CustomerhelpComponent},
-  
-
+  {path:'Register',component:SignupComponent},
 ]
 
 @NgModule({
@@ -55,10 +56,11 @@ const approute: Routes=[
     HeaderComponent,
     FooterComponent,
     HomesearchComponent,
+    SignupComponent,
     
   ],
   imports: [
-    BrowserModule,FormsModule,CommonModule,      
+    BrowserModule,FormsModule,ReactiveFormsModule,CommonModule,HttpClientModule,      
     AppRoutingModule,RouterModule.forRoot(approute),
   ],
   providers: [],

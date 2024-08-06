@@ -174,12 +174,14 @@ body{
 
 
 
-.content{
-    display:flex;
-    width:100%;
-    height:100%;
-    margin-top: 5%;
-    /*border:1px solid black;*/
+      @media (min-width: 600px) {
+        .content{
+            display:flex;
+            width:100%;
+            height:100%;
+            margin-top: 5%;
+            /*border:1px solid black;*/
+              }
       }
       .content-image{
       /*  border:1px solid red;*/
@@ -455,15 +457,16 @@ gap:10px;
 
 
          /*Why Ania solution starts*/
-         
-.position{
-margin-left: 2%;
-display: grid;
-grid-template-columns:30% 30% 30% ;
-gap:2%;
-position:relative;
-}
 
+@media (min-width: 600px) {
+    .position{
+        margin-left: 2%;
+        display: grid;
+        grid-template-columns:30% 30% 30% ;
+        gap:2%;
+        position:relative;
+        }
+  }
 .contain-adnia{
     background-color:#92a8d1;
     width:100%;

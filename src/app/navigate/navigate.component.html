@@ -28,7 +28,7 @@
 
 
 
-<header class="header">
+<div class="header">
 
         
     <div class="logo">
@@ -37,7 +37,7 @@
           <img src="/Alexa.jpg" alt="">
         </a>
     </div>
-    <div class="search"><app-homesearch style="position:absolute;left:40%;z-index: 3;"></app-homesearch></div>
+    <div class="search"><app-homesearch class="searchcomponent"></app-homesearch></div>
     <div class="navigation">
         <!--<input type="checkbox" > -->
      <!--   <input type="checkbox" class="toggle-menu"> -->
@@ -57,7 +57,7 @@
         </ul>
     
     </div>
-    </header>
+</div>
 
 
 
@@ -74,7 +74,7 @@
             <img src="/shop.webp" style="max-width: 15px;height:15px"><p>{{size}}</p>
         </div></a>   -->
         
-        <a style="position:relative;left:930px" routerLink="/Checkout">$ {{displayamount}} 
+        <a class="shoppingicon" routerLink="/Checkout">$ {{displayamount}} 
             <img src="/shop.webp" style="max-width: 15px;height:15px;z-index: -1;">
             <p style="font-size: 15px;color:black;z-index: 0;position: inherit;top: -25px;left:20px">{{size}}</p>
             </a>

@@ -44,57 +44,64 @@
     
 .wrapper-one-one{
     position:relative;
-    top:80px;
+    top:10%;
     animation: slide-one-one 30s infinite;
 }
 .wrapper-two-one{
     position:relative;
-    top:80px;
+    top:10%;
     animation: slide-two-one 30s infinite;
 }
 .wrapper-three-one{
     position:relative;
-    top:80px;
+    top:10%;
     animation: slide-three-one 30s infinite;
 }
 /**/
 .wrapper-one-two{
     position:relative;
-    top:80px;
+    top:10%;
     animation: slide-one-two 30s infinite;
 }
 .wrapper-two-two{
     position:relative;
-    top:80px;
+    top:10%;
     animation: slide-two-two 30s infinite;
 }
 .wrapper-three-two{
     position:relative;
-    top:80px;
+    top:10%;
     animation: slide-three-two 30s infinite;
 }
 /**/
 .wrapper-one-three{
     position:relative;
-    top:80px;
+    top:10%;
     animation: slide-one-three 30s infinite;
 }
 .wrapper-two-three{
     position:relative;
-    top:80px;
+    top:10%;
     animation: slide-two-three 30s infinite;
 }
 .wrapper-three-three{
     position:relative;
-    top:80px;
+    top:10%;
     animation: slide-three-three 30s infinite;
 }
+@media (min-width: 600px) {
+   p{font-size: 36px;}
+  }
+  p{
+    p{font-size: 16px;}
+  }
     .div1{
         width:33%;
         height:100%;
        /* border:5px solid yellow;*/
         display:flex;
         position:relative;
+       
     }
     .div2{
         width:33%;
@@ -119,7 +126,12 @@
         top:30%;
         
     }
-
+    @media (max-width: 600px) {
+        .container img{
+            right:-18%;
+                        
+        }
+       }
     @keyframes slidex{
     0%{
         transform: translateX(0);
@@ -393,4 +405,12 @@
 
 
 
-
+.leftarrow{
+    font-size:30px;position:absolute;top:130px;z-index: 2;
+}
+.rightarrow{
+    font-size:30px;position:absolute;top:130px;left:1324px;z-index: 2;
+}
+@media (max-width: 600px) {
+    .rightarrow{left:456px;}
+   }

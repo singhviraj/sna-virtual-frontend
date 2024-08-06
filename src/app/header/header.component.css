@@ -412,5 +412,6 @@
     font-size:30px;position:absolute;top:130px;left:1324px;z-index: 2;
 }
 @media (max-width: 600px) {
-    .rightarrow{left:456px;}
+    .rightarrow{left:456px;top:40px;}
+    .leftarrow{top:40px;}
    }

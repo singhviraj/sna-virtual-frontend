@@ -24,6 +24,13 @@ h5{
 
 */ 
 
+
+
+
+
+
+
+
 .header{
     position:relative;
     width:100%;
@@ -31,7 +38,6 @@ h5{
     justify-content: space-between;
     align-items: center;
     background: #92a8d1;
-    
     transition:0.3s;
     
  }
@@ -223,6 +229,8 @@ transition: 0.3s;
    /**/
 
    /**/
+   
+
    .navbar {
       position:relative;
       display:flex;
@@ -294,3 +302,32 @@ transition: 0.3s;
             width: 150%;
             }
        }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

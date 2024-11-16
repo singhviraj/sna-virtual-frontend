@@ -1,0 +1,14 @@
+@media(max-width:600px){
+
+    .show-on-pc{
+        display:none;
+    }
+}
+
+@media(min-width:600px){
+
+    .show-on-phone{
+        display:none;
+    }
+}
+

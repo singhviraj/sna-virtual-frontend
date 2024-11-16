@@ -2,6 +2,7 @@ import { Component ,OnInit } from '@angular/core';
 import { ProductsService } from '../products.service';
 import { CheckoutService } from '../checkout.service';
 import { AmountService } from '../amount.service';
+import { Observable } from 'rxjs';
 
 @Component({
   selector: 'app-products',
@@ -16,6 +17,7 @@ products:{id: string,name:string,price:string,color:string,description:string,am
 ngOnInit(){
 this.products=this.productslist.products;
 }
+
 sendcheckout(p1 : {id: string,name:string,price:string,color:string,description:string,amount:number}){
   this.checkoutlist.addnewproduct(p1);
   this.amoutlist.addamount(p1.amount);

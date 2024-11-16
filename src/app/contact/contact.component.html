@@ -1,5 +1,20 @@
 
-<h3>Contact Form</h3>
+
+
+<!--@defer(){<app-test></app-test> }@placeholder(minimum 13s) {  <h5>Loading test...</h5>   }
+
+  @defer(){<app-test2></app-test2> }@placeholder(minimum 13s) { <h5>Loading test...</h5>  }
+
+  @defer(){   <div>   {{x}}  </div>   }@placeholder(minimum 13s) { <h5>Loading test...</h5>  } -->
+
+
+ @defer () {
+  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3445.1925499353806!2d77.99411207436754!3d30.288579606964515!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39092bb61d8b9849%3A0x3a08463156ea74ba!2sDehradun%20Bus%20Stand!5e0!3m2!1sen!2sin!4v1731113710959!5m2!1sen!2sin" width=100% height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+} @placeholder(minimum 500ms) {
+<h5>Loading maps...</h5>
+}
+
+
 
 <div class="form">
   <h2>Let's Talk</h2>
@@ -7,9 +22,9 @@
   <form (ngSubmit) ="onsubmit(myform)" #myform ="ngForm">
 
       <div ngModelGroup="personaldetails" #personaldetails="ngModelGroup">
-      
-          <label for="firstname">Name: </label>
-          <br>
+      <label for="firstname">Name: </label>
+      <br>
+
   <input type="text" name="firstname" [(ngModel)]="customername" required #fname="ngModel">
    
   <br>
@@ -49,6 +64,35 @@
   
 <br>
 <button type="submit" value="submit" [disabled]="!myform.valid">Submit</button>
-  
+
+
   </form>
+  <button  (click) ='stop()'>Stop email</button>
 </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+   

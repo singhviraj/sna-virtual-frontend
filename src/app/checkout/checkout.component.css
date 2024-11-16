@@ -22,14 +22,23 @@
     width: 100%;
   
 }
-.contain-checkout{
-  position:absolute;
- top: 42%;
- left: 62%;
+@media (min-width: 600px) {
+  .contain-checkout1{
+    width: 50%;
+   }
+   .contain-checkout{
+    position:absolute;
+   top: 42%;
+   left: 62%;
+  }
 }
+
 .contain-checkout1{
-  width: 50%;
   height: 400px; 
   overflow-y:scroll ;
   margin-top: 2%;
+}
+img{
+  width:100%;
+
 }

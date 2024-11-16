@@ -1,0 +1,35 @@
+<div style="display:flex;width: 100%;height:60px">
+    <div style="z-index:2">
+        <img src="\Alexa.jpg" style="width:50px;height:50px;flex-grow: 1">
+    </div>
+    
+    <div style="flex-grow: 8"></div>
+    
+
+    <div [ngClass]="{'container': press === 1, 'change': press ===2}" (click) ='convert()' style="  z-index: 2;flex-grow: 1">
+        <div class="bar1"></div>
+        <div class="bar2"></div>
+        <div class="bar3"></div>
+    </div>
+
+</div>
+
+
+    <div [ngClass]="{'hide-phone': press === 1, 'contain-phone': press ===2}"  >
+        <a routerLink="/Home">Home</a>
+        <a routerLink="/Products">Products</a>
+        <a routerLink="/About">About</a>
+        <a routerLink="/Contact">Contact</a>
+       <a routerLink="/Account">Account</a>
+     
+     <a routerLink="/Customerhelp">Customerhelp</a>
+    <a routerLink="/Checkout">Checkout</a>
+    </div>
+
+
+
+
+
+
+
+

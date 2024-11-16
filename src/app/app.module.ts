@@ -21,6 +21,12 @@ import { FooterComponent } from './footer/footer.component';
 import { HomesearchComponent } from './homesearch/homesearch.component';
 import { HttpClientModule } from '@angular/common/http';
 import { SignupComponent } from './signup/signup.component';
+import { SortPipe } from './sort.pipe';
+import { TestComponent } from './test/test.component';
+import { Test2Component } from './test2/test2.component';
+import { Test2 } from './test2';
+import { Test } from './test';
+import { NavigatephoneComponent } from './navigatephone/navigatephone.component';
 
 
 
@@ -57,11 +63,16 @@ const approute: Routes=[
     FooterComponent,
     HomesearchComponent,
     SignupComponent,
+    SortPipe,
+    //Test2Component,
+    Test2Component,
+    NavigatephoneComponent,
+   
     
   ],
   imports: [
-    BrowserModule,FormsModule,ReactiveFormsModule,CommonModule,HttpClientModule,      
-    AppRoutingModule,RouterModule.forRoot(approute),
+    BrowserModule,FormsModule,ReactiveFormsModule,CommonModule,HttpClientModule,   TestComponent,  
+    AppRoutingModule,RouterModule.forRoot(approute)
   ],
   providers: [],
   bootstrap: [AppComponent]

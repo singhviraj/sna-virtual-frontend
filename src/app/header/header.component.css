@@ -128,7 +128,7 @@
     }
     @media (max-width: 600px) {
         .container img{
-            right:-18%;
+            right:-12%;
                         
         }
        }
@@ -412,6 +412,6 @@
     font-size:30px;position:absolute;top:130px;left:1324px;z-index: 2;
 }
 @media (max-width: 600px) {
-    .rightarrow{left:456px;top:40px;}
+    .rightarrow{left:352px;top:40px;}
     .leftarrow{top:40px;}
    }

@@ -9,7 +9,7 @@ export class HeaderComponent {
 press:number=1; x:number=0;
   constructor(private _renderer: Renderer2){}
   ngOnInit(){
-    this._renderer.setStyle(document.body, 'overflow-x', 'hidden');
+   // this._renderer.setStyle(document.body, 'overflow-x', 'hidden');
     this._renderer.setStyle(document.body, 'margin', 0);
      }
   

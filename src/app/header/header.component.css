@@ -403,8 +403,22 @@
 
 
 
+.arrow {
+    border: solid black;
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 3px;
+  }
 
-
+  .right {
+    transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+  }
+  
+  .left {
+    transform: rotate(135deg);
+    -webkit-transform: rotate(135deg);
+  }
 .leftarrow{
     font-size:30px;position:absolute;top:130px;z-index: 2;
 }
@@ -412,6 +426,6 @@
     font-size:30px;position:absolute;top:130px;left:1324px;z-index: 2;
 }
 @media (max-width: 600px) {
-    .rightarrow{left:352px;top:40px;}
+    .rightarrow{left:365px;top:40px;}
     .leftarrow{top:40px;}
    }

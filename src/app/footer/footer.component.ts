@@ -26,9 +26,9 @@ export class FooterComponent {
     clearInterval(this.id);
   }
   constructor(private ngZone: NgZone) {}
-  ngOnInit() {
+  //ngOnInit() {
    // this.ngZone.runOutsideAngular(() => setInterval(this.add,2000));
-    }
+   // }
 
 
  

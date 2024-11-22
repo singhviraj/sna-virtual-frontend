@@ -1,5 +1,5 @@
 import { NgModule } from '@angular/core';
-import { BrowserModule } from '@angular/platform-browser';
+import { BrowserModule, provideClientHydration } from '@angular/platform-browser';
 import { Routes ,RouterModule } from '@angular/router';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -74,7 +74,9 @@ const approute: Routes=[
     BrowserModule,FormsModule,ReactiveFormsModule,CommonModule,HttpClientModule,   TestComponent,  
     AppRoutingModule,RouterModule.forRoot(approute)
   ],
-  providers: [],
+  providers: [
+    provideClientHydration()
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

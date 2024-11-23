@@ -67,12 +67,13 @@ const approute: Routes=[
     //Test2Component,
     Test2Component,
     NavigatephoneComponent,
-   
+
     
   ],
   imports: [
     BrowserModule,FormsModule,ReactiveFormsModule,CommonModule,HttpClientModule,   TestComponent,  
-    AppRoutingModule,RouterModule.forRoot(approute)
+    AppRoutingModule,RouterModule.forRoot(approute),   
+
   ],
   providers: [
     provideClientHydration()
